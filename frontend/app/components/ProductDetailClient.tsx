@@ -43,7 +43,7 @@ export default function ProductDetailClient({ product }: Props) {
                                             key={i}
                                             onClick={() => setActiveImageIndex(i)}
                                             className={`border-2 rounded ${i === activeImageIndex
-                                                ? "border-purple-600"
+                                                ? "border-[#ff9167]"
                                                 : "border-transparent"
                                                 }`}
                                         >
@@ -63,7 +63,7 @@ export default function ProductDetailClient({ product }: Props) {
                         {/* DETAILS */}
                         <div className="p-8 space-y-6">
 
-                            <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
+                            <span className="bg-purple-100 text-[#ff9167] px-3 py-1 rounded-full text-sm font-semibold">
                                 {product.category}
                             </span>
 
@@ -71,7 +71,7 @@ export default function ProductDetailClient({ product }: Props) {
                                 {product.name}
                             </h1>
 
-                            <p className="text-3xl font-bold text-purple-600">
+                            <p className="text-3xl font-bold text-[#df6839]">
                                 ${product.price}
                             </p>
 
@@ -88,7 +88,7 @@ export default function ProductDetailClient({ product }: Props) {
                                                 setActiveImageIndex(0)
                                             }}
                                             className={`px-3 py-1 border rounded-md ${activeVariant.color === variant.color
-                                                ? "border-purple-600 bg-purple-100"
+                                                ? "border-[#ff9167] bg-purple-100"
                                                 : "border-gray-300"
                                                 }`}
                                         >
@@ -134,7 +134,7 @@ export default function ProductDetailClient({ product }: Props) {
                                     // ✅ Show toast notification
                                     toast.success(`${product.name} (${activeVariant.color}) added to cart!`)
                                 }}
-                                className="w-full border-2 border-purple-600 text-purple-600 py-3 rounded-lg hover:bg-purple-50 font-semibold transition"
+                                className="w-full border-2 border-[#ff9167] text-[#ff9167] py-3 rounded-lg hover:bg-purple-50 font-semibold transition"
                             >
                                 Add to Cart
                             </button>

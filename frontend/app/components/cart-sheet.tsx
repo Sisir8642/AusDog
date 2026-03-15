@@ -36,10 +36,10 @@ export default function CartSheet() {
 
       <SheetTrigger asChild>
         <button className="relative">
-          <ShoppingCart className="w-6 h-6" />
+          <ShoppingCart className="w-8 h-7 text-white cursor-pointer " />
 
           {totalItems > 0 && (
-            <span className="absolute -top-2 -right-2 bg-purple-600 text-white text-xs rounded-full px-2">
+            <span className="absolute -top-2 -right-2 bg-[#60a879] text-white text-xs rounded-full px-2">
               {totalItems}
             </span>
           )}
@@ -84,7 +84,7 @@ export default function CartSheet() {
                   Color: {item.color}
                 </p>
 
-                <p className="text-purple-600 font-bold">
+                <p className="text-[#d56539] font-bold">
                   ${item.price}
                 </p>
 
@@ -140,7 +140,7 @@ export default function CartSheet() {
                 <span>${subtotal.toFixed(2)}</span>
               </div>
 
-              <button className="w-full mt-4 bg-purple-600 text-white py-3 rounded-lg">
+              <button className="w-full mt-4 bg-[#ff9167] text-white py-3 rounded-lg">
                 Checkout
               </button>
 

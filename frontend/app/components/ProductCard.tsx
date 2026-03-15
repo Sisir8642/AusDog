@@ -21,7 +21,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
 
         {/* Image */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50">
+        <div className="relative overflow-hidden bg-linear-to-br from-blue-50 to-purple-50">
           <Image
             src={previewImage}
             alt={product.name}

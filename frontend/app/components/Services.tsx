@@ -227,7 +227,7 @@ function BlogCard({ p, inView }: { p: Post; inView: boolean }) {
                 </div>
 
                 {/* Category pill */}
-                <span className="absolute top-3 left-3 text-[10px] font-bold tracking-widest uppercase bg-[#7a4f52] text-white px-3 py-1 rounded-full">
+                <span className="absolute top-3 left-3 text-[10px] font-bold tracking-widest uppercase bg-[#ff9167] text-white px-3 py-1 rounded-full">
                     {p.category}
                 </span>
             </div>

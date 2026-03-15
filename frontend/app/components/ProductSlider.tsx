@@ -12,19 +12,28 @@ const ProductSlider = () => {
     return (
         <div className='w-full py-10'>
             <Swiper
-                modules={[Autoplay, Navigation]}
-                spaceBetween={20}
-                slidesPerView={3}
-                loop={true}
-                navigation
-                autoplay={{
-                    delay: 0,
-                    disableOnInteraction: false
-                }}
-                
-                speed={5000}
-                className="px-6"
-            >
+  modules={[Autoplay, Navigation]}
+  spaceBetween={20}
+  loop={true}
+  navigation
+  autoplay={{
+    delay: 0,
+    disableOnInteraction: false
+  }}
+  speed={5000}
+  breakpoints={{
+    0: {
+      slidesPerView: 1
+    },
+    640: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }}
+  className="px-6"
+>
                 {products.map((product) => (
                     <SwiperSlide key={product.id}>
                         <ProductCard product={product} />

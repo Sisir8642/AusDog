@@ -83,7 +83,7 @@ export default function TestimonialSection() {
       >
         {/* Left Background Image (Left half) */}
 <div
-  className="absolute top-0 left-0 w-1/2 h-full bg-cover bg-center opacity-30 z-0"
+  className="hidden md:block absolute top-0 left-0 w-1/2 h-full bg-cover bg-center opacity-30 z-0"
   style={{
     backgroundImage: 'url("/images/image.png")',
     transform: "scaleX(-1)",
@@ -92,7 +92,7 @@ export default function TestimonialSection() {
 
   {/* Right Background Image (Right half) */}
   <div
-    className="absolute top-0 right-0 w-1/2 h-full bg-cover bg-center opacity-30 z-0"
+className="absolute top-0 right-0 md:right-0 w-full md:w-1/2 h-full bg-cover bg-center opacity-30 z-0"
     style={{ backgroundImage: 'url("/images/image.png")' }}
   />
 
